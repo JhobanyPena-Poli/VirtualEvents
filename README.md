@@ -3,7 +3,7 @@
 **Módulo:** Gerencia de Proyectos Informáticos\
 **Nombre de la entrega:** Desarrollo de un proyecto informático\
 **Nivel académico:** Profesional\
-**Tipo de entrega:** Documento con formato creado por el estudiante. Producto de software. (Tienda Virtual)\
+**Tipo de entrega:** Documento con formato creado por el estudiante. Producto de software. (Tienda Virtual)
 
 **Descripcion:**
 
