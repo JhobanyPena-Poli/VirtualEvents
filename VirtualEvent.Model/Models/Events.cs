@@ -10,7 +10,7 @@ namespace VirtualEvent.Model.Models
     {
         public Events()
         {
-            Attendance = new HashSet<Attendance>();
+            Attendances = new HashSet<Attendances>();
             EventAttachments = new HashSet<EventAttachments>();
         }
 
@@ -24,7 +24,7 @@ namespace VirtualEvent.Model.Models
         public string Url { get; set; }
         public string Notes { get; set; }
 
-        public virtual ICollection<Attendance> Attendance { get; set; }
+        public virtual ICollection<Attendances> Attendances { get; set; }
         public virtual ICollection<EventAttachments> EventAttachments { get; set; }
     }
 }

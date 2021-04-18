@@ -19,7 +19,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "Attendance",
+         "Name": "Attendances",
          "ObjectType": 0
       },
       {
@@ -34,7 +34,7 @@
    "UiHint": "VirtualEvents",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
-   "UseDbContextSplitting": true,
+   "UseDbContextSplitting": false,
    "UseFluentApiOnly": true,
    "UseHandleBars": false,
    "UseInflector": false,

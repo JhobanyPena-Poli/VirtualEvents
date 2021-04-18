@@ -6,9 +6,9 @@ using System.Collections.Generic;
 
 namespace VirtualEvent.Model.Models
 {
-    public partial class Attendance
+    public partial class Attendances
     {
-        public Attendance()
+        public Attendances()
         {
             AttendanceAttanchments = new HashSet<AttendanceAttanchments>();
         }

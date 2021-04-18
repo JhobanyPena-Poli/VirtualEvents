@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VirtualEvent.DataBase", "Vi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualEvent.UI", "VirtualEvent.UI\VirtualEvent.UI.csproj", "{FD46B022-8872-4F2D-9F48-BBF681E0A6B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualEvent.Model", "VirtualEvent.Model\VirtualEvent.Model.csproj", "{8DB815F1-8398-488B-B0E6-A6B2521AA7A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualEvent.Model", "VirtualEvent.Model\VirtualEvent.Model.csproj", "{8DB815F1-8398-488B-B0E6-A6B2521AA7A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
