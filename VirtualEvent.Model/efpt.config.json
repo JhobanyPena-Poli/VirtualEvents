@@ -1,6 +1,6 @@
 ﻿{
    "CodeGenerationMode": 0,
-   "ContextClassName": "VirtualeventsDbContext",
+   "ContextClassName": "VirtualEventsDbContext",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
    "FilterSchemas": false,
@@ -15,26 +15,26 @@
    "SelectedToBeGenerated": 0,
    "Tables": [
       {
-         "Name": "Events",
+         "Name": "[dbo].[Attendance]",
          "ObjectType": 0
       },
       {
-         "Name": "Attendances",
+         "Name": "[dbo].[AttendanceAttanchments]",
          "ObjectType": 0
       },
       {
-         "Name": "EventAttachments",
+         "Name": "[dbo].[EventAttachments]",
          "ObjectType": 0
       },
       {
-         "Name": "AttendanceAttanchments",
+         "Name": "[dbo].[Events]",
          "ObjectType": 0
       }
    ],
-   "UiHint": "VirtualEvents",
+   "UiHint": "DESKTOP-DI6ES0F\\SQLEXPRESS.VirtualEvent",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
-   "UseDbContextSplitting": false,
+   "UseDbContextSplitting": true,
    "UseFluentApiOnly": true,
    "UseHandleBars": false,
    "UseInflector": false,

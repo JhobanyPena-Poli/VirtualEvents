@@ -6,19 +6,19 @@ using System.Collections.Generic;
 
 namespace VirtualEvent.Model.Models
 {
-    public partial class Attendances
+    public partial class Attendance
     {
-        public Attendances()
+        public Attendance()
         {
             AttendanceAttanchments = new HashSet<AttendanceAttanchments>();
         }
 
-        public long AttendanceId { get; set; }
-        public long EventId { get; set; }
+        public int AttendanceId { get; set; }
+        public int EventId { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public string Notes { get; set; }
-        public byte[] AttendanceDate { get; set; }
+        public DateTime AttendanceDate { get; set; }
 
         public virtual Events Event { get; set; }
         public virtual ICollection<AttendanceAttanchments> AttendanceAttanchments { get; set; }

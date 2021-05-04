@@ -10,21 +10,21 @@ namespace VirtualEvent.Model.Models
     {
         public Events()
         {
-            Attendances = new HashSet<Attendances>();
+            Attendance = new HashSet<Attendance>();
             EventAttachments = new HashSet<EventAttachments>();
         }
 
-        public long EventId { get; set; }
+        public int EventId { get; set; }
         public string OrganizerId { get; set; }
         public string Title { get; set; }
-        public byte[] StartDate { get; set; }
-        public byte[] StartTime { get; set; }
-        public byte[] EndDate { get; set; }
-        public byte[] EndTime { get; set; }
+        public DateTime StartDate { get; set; }
+        public TimeSpan StartTime { get; set; }
+        public DateTime EndDate { get; set; }
+        public TimeSpan EndTime { get; set; }
         public string Url { get; set; }
         public string Notes { get; set; }
 
-        public virtual ICollection<Attendances> Attendances { get; set; }
+        public virtual ICollection<Attendance> Attendance { get; set; }
         public virtual ICollection<EventAttachments> EventAttachments { get; set; }
     }
 }

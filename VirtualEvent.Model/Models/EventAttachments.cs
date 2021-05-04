@@ -8,8 +8,8 @@ namespace VirtualEvent.Model.Models
 {
     public partial class EventAttachments
     {
-        public long EventAttachmentId { get; set; }
-        public long EventId { get; set; }
+        public int EventAttachmentId { get; set; }
+        public int EventId { get; set; }
         public string Name { get; set; }
 
         public virtual Events Event { get; set; }
