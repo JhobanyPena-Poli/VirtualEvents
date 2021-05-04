@@ -20,8 +20,8 @@ namespace VirtualEvent.Model.Data
         {
         }
 
-        public virtual DbSet<Attendance> Attendance { get; set; }
         public virtual DbSet<AttendanceAttanchments> AttendanceAttanchments { get; set; }
+        public virtual DbSet<Attendances> Attendances { get; set; }
         public virtual DbSet<EventAttachments> EventAttachments { get; set; }
         public virtual DbSet<Events> Events { get; set; }
 
@@ -29,8 +29,8 @@ namespace VirtualEvent.Model.Data
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
-            modelBuilder.ApplyConfiguration(new Configurations.AttendanceConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.AttendanceAttanchmentsConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.AttendancesConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.EventAttachmentsConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.EventsConfiguration());
             OnModelCreatingPartial(modelBuilder);

@@ -9,10 +9,13 @@ using VirtualEvent.Model.Models;
 
 namespace VirtualEvent.Model.Data.Configurations
 {
-    public partial class AttendanceConfiguration : IEntityTypeConfiguration<Attendance>
+    public partial class AttendancesConfiguration : IEntityTypeConfiguration<Attendances>
     {
-        public void Configure(EntityTypeBuilder<Attendance> entity)
+        public void Configure(EntityTypeBuilder<Attendances> entity)
         {
+            entity.HasKey(e => e.AttendanceId)
+                .HasName("PK_Attendance");
+
             entity.Property(e => e.AttendanceDate).HasColumnType("date");
 
             entity.Property(e => e.Email)
@@ -28,14 +31,14 @@ namespace VirtualEvent.Model.Data.Configurations
             entity.Property(e => e.Notes).IsUnicode(false);
 
             entity.HasOne(d => d.Event)
-                .WithMany(p => p.Attendance)
+                .WithMany(p => p.Attendances)
                 .HasForeignKey(d => d.EventId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Attendance_Events");
+                .HasConstraintName("FK_Attendances_Events");
 
             OnConfigurePartial(entity);
         }
 
-        partial void OnConfigurePartial(EntityTypeBuilder<Attendance> entity);
+        partial void OnConfigurePartial(EntityTypeBuilder<Attendances> entity);
     }
 }

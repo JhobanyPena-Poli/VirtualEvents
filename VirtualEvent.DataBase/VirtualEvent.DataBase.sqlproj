@@ -64,7 +64,7 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Events.sql" />
     <Build Include="dbo\Tables\EventAttachments.sql" />
-    <Build Include="dbo\Tables\Attendance.sql" />
     <Build Include="dbo\Tables\AttendanceAttanchments.sql" />
+    <Build Include="dbo\Tables\Attendances.sql" />
   </ItemGroup>
 </Project>

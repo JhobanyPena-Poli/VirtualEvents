@@ -24,7 +24,7 @@ namespace VirtualEvent.Model.Data.Configurations
                 .WithMany(p => p.AttendanceAttanchments)
                 .HasForeignKey(d => d.AttendanceId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_AttendanceAttanchments_Attendance");
+                .HasConstraintName("FK_AttendanceAttanchments_Attendances");
 
             OnConfigurePartial(entity);
         }

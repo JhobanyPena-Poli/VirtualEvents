@@ -12,6 +12,6 @@ namespace VirtualEvent.Model.Models
         public int AttendanceId { get; set; }
         public string Name { get; set; }
 
-        public virtual Attendance Attendance { get; set; }
+        public virtual Attendances Attendance { get; set; }
     }
 }

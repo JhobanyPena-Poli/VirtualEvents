@@ -15,11 +15,11 @@
    "SelectedToBeGenerated": 0,
    "Tables": [
       {
-         "Name": "[dbo].[Attendance]",
+         "Name": "[dbo].[AttendanceAttanchments]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[AttendanceAttanchments]",
+         "Name": "[dbo].[Attendances]",
          "ObjectType": 0
       },
       {
